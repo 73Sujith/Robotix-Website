@@ -5,7 +5,7 @@ $(document).ready(function () {
 $(document).click(function (event) {
     var clickover = $(event.target);
     var _opened = $(".navbar-collapse").hasClass("show");
-    if (_opened === true && !clickover.hasClass("navbar-toggler")) $("button.navbar-toggler").click();
+    if (_opened === true && !clickover.hasClass("navbar-toggler") && !clickover.hasClass("carouse__arrow") && !clickover.hasClass("carous__arrow")) $("button.navbar-toggler").click();
     });
 });
 
